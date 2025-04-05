@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0F8FF;
+    /* Light blue background */
+    margin: 0;
+    background-image: linear-gradient(rgba(240, 248, 255, 0.95), rgba(240, 248, 255, 1)); /* Subtle texture */
+    padding: 0;
+}
+
+header {
+    background-color: #1e90ff; /* Blue background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #1E90FF;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ADD8E6;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
+}
+
+#welcome p {
+    color: #333; /* Contrasting text color */
+}
+
+nav a {
+    font-size: 1.2em;
+}
+
+
+#welcome img {
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #1e90ff; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+}
+
+nav a:hover {
+    color: #ADD8E6;
+}
